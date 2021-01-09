@@ -1,0 +1,23 @@
+html {
+    min-height: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.btn {
+    background-color: blue;
+    color: white;
+    float:right;
+    text-align: center;
+    padding: 6px;
+    margin-right: 5px;
+}
+h1 {
+    font-family: 'Montez', cursive; 
+    color: blue;
+}
+h3 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-style: italic;
+}
