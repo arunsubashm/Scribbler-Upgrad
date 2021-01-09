@@ -5,12 +5,19 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 }
-.btn {
+.btn-head {
     background-color: blue;
     color: white;
     float:right;
     text-align: center;
-    padding: 6px;
+    padding: 8px;
+    margin-right: 5px;
+}
+.btn-center {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 8px;
     margin-right: 5px;
 }
 h1 {
@@ -20,4 +27,13 @@ h1 {
 h3 {
     font-family: 'Ubuntu Mono', monospace;
     font-style: italic;
+}
+.container-center {
+    position:absolute;
+    width:200px;
+    height:200px;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
 }
