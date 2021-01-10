@@ -7,11 +7,6 @@ function displayForm(id, toggle) {
     }
 }
 
-/* Open a page in the same window */
-function openPage(page) {
-    window.open(page,'_self');
-}
-
 /* Toggle between 2 Modal Forms */
 function swapForm(closeid, displayid) {
     document.getElementById(closeid).style.display='none';
