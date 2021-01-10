@@ -24,6 +24,17 @@ html {
     background-color: green;
     font-size: 15px;
     color: white;
+    text-align: center;
+}
+/* Post Button */
+.btn-post {
+    width: 10%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: green;
+    font-size: 15px;
+    color: white;
+    text-align: center;
 }
 /* Various Headers used */
 h1 {
@@ -60,6 +71,12 @@ h4 {
     margin: 10px auto; /* 15% from the top and centered */
     width: 30%; /* Could be more or less, depending on screen size */
 }
+.modal-content-post {
+    position: relative;
+    background-color: white;
+    margin: 10px auto; /* 15% from the top and centered */
+    width: 70%; /* Could be more or less, depending on screen size */
+}
 /* The Close Button */
 .close-form {
     /* Position it in the top right corner outside of the modal */
@@ -94,6 +111,10 @@ input[type=text], input[type=password] {
     display: inline-block;
     box-sizing: border-box;
     background-color: grey;
+}
+/* Contents need a bigger box */
+.form-content {
+    height:250px;
 }
 .top-right {
     position: absolute;

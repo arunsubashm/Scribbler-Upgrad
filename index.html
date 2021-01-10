@@ -60,7 +60,22 @@
         </div>
         <div class = "container-center">
             <button class = "btn-center" onclick="openPage('html/bloglist.html')">All Posts</button>
-            <button class = "btn-center">Create Post</button>
+            <button class = "btn-center" onclick="displayForm('createpost',0)">Create Post</button>
+        </div>
+        <div id="createpost" class="modal">
+            <!-- Modal Content -->
+            <form class="modal-content-post">
+                <span onclick="displayForm('createpost',1)" class="close-form" title="Close">&times;</span>
+                <h2>Pen Your Post</h2>
+                <hr size="2" width="95%" color="black"> 
+                <div class="container">
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" placeholder="Enter title of your post" name="title" required>
+                    <label for="contents"><b>Contents</b></label>
+                    <input type="text" class = "form-content" placeholder="Enter the contents of your post" name="contents" required>
+                    <button type="submit" class = "btn-post">Create</button>
+                </div>
+            </form>
         </div>
 </body>
 
