@@ -111,11 +111,13 @@ input[type=text], input[type=password] {
     display: inline-block;
     box-sizing: border-box;
     background-color: grey;
+    color:white;
 }
 /* Contents need a bigger box */
 .form-content {
     height:250px;
 }
+/* Top-Right abd Top-Left Settings for Header */
 .top-right {
     position: absolute;
     top:0;
@@ -128,4 +130,11 @@ input[type=text], input[type=password] {
     top:0;
     left:0;
     padding-left:8px;
+}
+::placeholder {
+    color:white;
+    opacity: 1;
+}
+.align-post {
+    text-align: center;
 }
