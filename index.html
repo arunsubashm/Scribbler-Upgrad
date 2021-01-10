@@ -5,6 +5,8 @@
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script src="scripts/common.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
@@ -12,14 +14,49 @@
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
         <div class = "container-header">
-            <button class = "btn-head">Sign Up</button>
-            <button class = "btn-head">Sign In</button>
+            <button class = "btn-head" onclick="displayForm('signin',0)">Sign In</button>
+            <button class = "btn-head" onclick="displayForm('signup',0)">Sign Up</button>
             <h1>ScriBBler</h1>
             <h3>Explore, Imagine, Create</h3>
         </div>
         <div class = "container-center">
             <button class = "btn-center">All Posts</button>
             <button class = "btn-center">Create Post</button>
+        </div>
+        <div id="signup" class="modal">
+            <!-- Modal Content -->
+            <form class="modal-content">
+                <span onclick="displayForm('signup',1)" class="close-form" title="Close">&times;</span>
+                <h2>Get Started</h2>
+                <hr size="2" width="95%" color="black"> 
+                <div class="container">
+                    <label for="fname"><b>Name</b></label>
+                    <input type="text" placeholder="Enter your name" name="fname" required>
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter your username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter your Password" name="psw" required>
+                    <label for="rpsw"><b>Confirm Password</b></label>
+                    <input type="password" placeholder="Re-enter Password" name="rpsw" required>
+                    <button type="submit" class = "btn-sign">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        <div id="signin" class="modal">
+            <!-- Modal Content -->
+            <form class="modal-content">
+                <span onclick="displayForm('signin',1)" class="close-form" title="Close">&times;</span>
+                <h2>Welcome Back!</h2>
+                <hr size="2" width="95%" color="black"> 
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter your username" name="uname" required>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter your Password" name="psw" required>
+                    <button type="submit" class = "btn-sign">Sign In</button>
+                    <h2>Not a member? Sign Up</h2>
+                </div>
+            </form>
         </div>
 </body>
 

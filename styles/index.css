@@ -1,18 +1,4 @@
-html {
-    min-height: 100%;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.btn-head {
-    background-color: blue;
-    color: white;
-    float:right;
-    text-align: center;
-    padding: 8px;
-    margin-right: 5px;
-}
+/* Buttons used in the center of the page */
 .btn-center {
     background-color: orange;
     color: white;
@@ -20,14 +6,7 @@ html {
     padding: 8px;
     margin-right: 5px;
 }
-h1 {
-    font-family: 'Montez', cursive; 
-    color: blue;
-}
-h3 {
-    font-family: 'Ubuntu Mono', monospace;
-    font-style: italic;
-}
+/* Container for the buttons in the middle of the page */
 .container-center {
     position:absolute;
     width:200px;
