@@ -73,7 +73,9 @@ h4 {
 }
 /* Close button on hover */
 .toggle-form:hover,
-.toggle-form:focus {
+.toggle-form:focus,
+.close-form:hover,
+.close-form:focus {
     cursor: pointer;
 }
 /* Add padding to containers */

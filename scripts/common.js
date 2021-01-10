@@ -6,11 +6,13 @@ function displayForm(id, toggle) {
         document.getElementById(id).style.display='none';
     }
 }
+
 /* Open a page in the same window */
 function openPage(page) {
     window.open(page,'_self');
 }
-/* */
+
+/* Toggle between 2 Modal Forms */
 function swapForm(closeid, displayid) {
     document.getElementById(closeid).style.display='none';
     document.getElementById(displayid).style.display='block';
