@@ -36,6 +36,9 @@ h3 {
 h2 {
     padding: 12px 20px;
 }
+h4 {
+    text-align: center;
+}
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -63,9 +66,14 @@ h2 {
     font-size: 30px;
     font-weight: bold;
 }
+/* Toggle Form */
+.toggle-form {
+    /* Position it in the top right corner outside of the modal */
+    color: blue;
+}
 /* Close button on hover */
-.close-form:hover,
-.close-form:focus {
+.toggle-form:hover,
+.toggle-form:focus {
     cursor: pointer;
 }
 /* Add padding to containers */
