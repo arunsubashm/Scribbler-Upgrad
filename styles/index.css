@@ -1,3 +1,11 @@
+/* Setting the background on the homage page */
+html {
+    min-height: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 /* Buttons used in the center of the page */
 .btn-center {
     background-color: orange;
@@ -6,7 +14,7 @@
     padding: 8px;
     margin-right: 5px;
 }
-/* Container for the buttons in the middle of the page */
+/* Container for the buttons in the center of the page */
 .container-center {
     position:absolute;
     width:200px;

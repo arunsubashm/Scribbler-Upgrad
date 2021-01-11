@@ -1,11 +1,3 @@
-/* Setting the background */
-html {
-    min-height: 100%;
-    background-image: url(../images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
 /* Buttons used in the header */
 .btn-head {
     background-color: blue;
