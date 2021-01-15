@@ -1,6 +1,3 @@
-/* Call buildHeader() to create a header is "common-header" is needed */
-buildHeader("common-header");
-
 /* Function to build header used in all the pages */
 
 function buildHeader(id) {

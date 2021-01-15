@@ -4,14 +4,23 @@
 
 <head>
     <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/postslist.css">
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="common-header"></div>
-</body>
+    <script type="text/javascript">
+        buildHeader("common-header");
+    </script>
 
-<script src="../scripts/common.js"></script>
+    <div id="dump-posts"></div>
+    <script type="text/javascript">
+        loadPosts("dump-posts");
+    </script>
+</body>
 
 </html>

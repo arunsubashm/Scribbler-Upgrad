@@ -4,6 +4,8 @@
 <head>
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/common.css">
+    <script src="scripts/common.js"></script>
+    <script src="scripts/index.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
@@ -11,6 +13,10 @@
 <body>
 
     <div id="common-header"></div>
+        <script type="text/javascript">
+            buildHeader("common-header");
+        </script>
+    <div>
 
     <div class = "container-center">
         <button class = "btn-center" onclick="openPage('html/bloglist.html')">All Posts</button>
@@ -36,8 +42,5 @@
     </div>
 
 </body>
-
-<script src="scripts/common.js"></script>
-<script src="scripts/index.js"></script>
 
 </html>
