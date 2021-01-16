@@ -73,10 +73,8 @@ h4 {
 .close-form {
     /* Position it in the top right corner outside of the modal */
     position: absolute;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    right:0vmax;
+    top:0;
+    right:0;
     padding: 8px 20px;
 }
 /* Toggle Form */

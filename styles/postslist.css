@@ -37,20 +37,18 @@ html {
 
   .close-post {
     /* Position it in the top right corner outside of the modal */
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
     top:0;
     right:0;
     position: absolute;
+    padding-right:15px;
+    padding-top:15px;
 }
 
 .full-post {
   /* Position it in the top right corner outside of the modal */
-  color: black;
-  font-size: 30px;
-  font-weight: bold;
   bottom:0;
   right:0;
   position: absolute;
+  padding-right:15px;
+  padding-bottom:15px;
 }

@@ -20,7 +20,7 @@ function buildHeader(id) {
     template = 
     "<div id='signup' class='modal'>" + 
     "<form class='modal-content'>" +
-    "<span onclick=displayForm('signup',1) class='close-form' title='Close'>&times;</span>" +
+    "<span onclick=displayForm('signup',1) class='close-form fa fa-times' title='Close'></span>" +
     "<h2>Get Started</h2>" + 
     "<hr size='2' width='95%' color='black'>" + 
     "<div class='container'>" +
@@ -41,7 +41,7 @@ function buildHeader(id) {
     template = 
     "<div id='signin' class='modal'>" +
     "<form class='modal-content'>" +
-    "<span onclick=displayForm('signin',1) class='close-form' title='Close'>&times;</span>" +
+    "<span onclick=displayForm('signin',1) class='close-form fa fa-times' title='Close'></span>" +
     "<h2>Welcome Back!</h2>" +
     "<hr size='2' width='95%' color='black'>" + "</hr>" +
     "<div class='container'>" +
