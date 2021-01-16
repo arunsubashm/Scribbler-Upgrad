@@ -9,11 +9,48 @@ html {
     justify-content: center;
     align-items: center;
   }
-  
   .flex-child {
-    background-color: grey;
+    position: relative;
+    display: grid;
+    grid-template-columns:75px 425px;
+    grid-template-rows: auto;
     height: 150px;
     width: 500px;
-    margin: 40px;
-    padding: 40px;
+    margin: 30px;
   }
+
+  .flex-title {
+    background-color:white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+  .flex-body {
+    background-color:pink;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 5px;
+  }
+
+  .close-post {
+    /* Position it in the top right corner outside of the modal */
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    top:0;
+    right:0;
+    position: absolute;
+}
+
+.full-post {
+  /* Position it in the top right corner outside of the modal */
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  bottom:0;
+  right:0;
+  position: absolute;
+}
