@@ -17,24 +17,25 @@ var posts = [
     content:"Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz."}
 ];
 var activepost="";
+
 /* Modal Form - Diplay and Close */
 function displayDelete(id, postid, toggle) {
     console.log(id, toggle);
     if (toggle == 0) {
         document.getElementById(id).style.display='block';
         activepost = postid;
-        console.log(activepost);
     } else {
         document.getElementById(id).style.display='none';
     }
 }
 
+/* Function to delete an active post */
 function deletePost() {
-    console.log(activepost);
     displayDelete('deletepost',"", 1);
     document.getElementById(activepost).remove();
 }
 
+/* Function to load all the Posts */
 function loadPosts(id) {
     var template="";
 

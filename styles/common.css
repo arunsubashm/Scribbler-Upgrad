@@ -108,11 +108,15 @@ input[type=text], input[type=password] {
     height:250px;
 }
 /* Top-Right abd Top-Left Settings for Header */
+.header {
+    position: relative;
+}
 .top-right {
     top:0;
     right:0;
     padding: 12px 20px;
     margin: 8px 0;
+    position: absolute;
 }
 .top-left {
     top:0;

@@ -1,14 +1,8 @@
 /* Function to build header used in all the pages */
-
 function buildHeader(id) {
     var template;
 
-    template = 
-    "<div class='top-right'>" + 
-    "<button class = 'btn-head' onclick=displayForm('signin',0)>Sign In </button>" + 
-    "<button class = 'btn-head' onclick=displayForm('signup',0)>Sign Up </button>" + 
-    "</div>";
-    document.getElementById(id).innerHTML = template;
+    template = "<div class = 'header'>";
 
     template = 
     "<div class='top-left'>" + 
@@ -16,6 +10,15 @@ function buildHeader(id) {
     "<h3>Explore, Imagine, Create</h3>" + 
     "</div>";
     document.getElementById(id).innerHTML += template;
+
+    template += 
+    "<div class='top-right'>" + 
+    "<button class = 'btn-head' onclick=displayForm('signin',0)>Sign In </button>" + 
+    "<button class = 'btn-head' onclick=displayForm('signup',0)>Sign Up </button>" + 
+    "</div>";
+    document.getElementById(id).innerHTML = template;
+
+    template += "</div>";
 
     template = 
     "<div id='signup' class='modal'>" + 

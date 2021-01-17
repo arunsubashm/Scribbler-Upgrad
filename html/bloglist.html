@@ -13,16 +13,19 @@
 </head>
 
 <body>
+    <!-- Common header -->
     <div id="common-header"></div>
     <script type="text/javascript">
         buildHeader("common-header");
     </script>
 
+    <!-- Dump all the Posts -->
     <div id="dump-posts"></div>
     <script type="text/javascript">
         loadPosts("dump-posts");
     </script>
 
+    <!-- Modal - Delete Confirmation -->
     <div id="deletepost" class="modal">
         <div class="modal-content-confirm">
             <p class = "pcenter">Are you sure you want to delete the  post?</p>
