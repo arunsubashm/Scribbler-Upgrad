@@ -16,10 +16,23 @@ var posts = [
     short:"Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code",
     content:"Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module named xyz."}
 ];
+var activepost="";
+/* Modal Form - Diplay and Close */
+function displayDelete(id, postid, toggle) {
+    console.log(id, toggle);
+    if (toggle == 0) {
+        document.getElementById(id).style.display='block';
+        activepost = postid;
+        console.log(activepost);
+    } else {
+        document.getElementById(id).style.display='none';
+    }
+}
 
-function deletePost(id) {
-    console.log(id);
-    document.getElementById(id).remove();
+function deletePost() {
+    console.log(activepost);
+    displayDelete('deletepost',"", 1);
+    document.getElementById(activepost).remove();
 }
 
 function loadPosts(id) {
@@ -33,7 +46,7 @@ function loadPosts(id) {
         template += "<div class = 'flex-body'>";
         template += "<p class = 'title-post'>" + posts[i].title + "</p>";
         template += "<p class = 'content-post'>" + posts[i].short + "</p>";
-        template += "<span class='fa fa-trash close-post' aria-hidden='true' title='Close' onclick=deletePost(" + "'" + posts[i].id + "'" + ")></span>";
+        template += "<span class='fa fa-trash close-post' aria-hidden='true' title='Close' onclick=displayDelete('deletepost'," + "'" + posts[i].id + "'" + ",0)></span>";
         template += "<span class='fa fa-ellipsis-h full-post' aria-hidden='true' title='Post'></span>";
         template += "</div>";
         template += "</div>";

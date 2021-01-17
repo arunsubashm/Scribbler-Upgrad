@@ -22,6 +22,15 @@
     <script type="text/javascript">
         loadPosts("dump-posts");
     </script>
+
+    <div id="deletepost" class="modal">
+        <div class="modal-content-confirm">
+            <p class = "pcenter">Are you sure you want to delete the  post?</p>
+            <button class = "btn btn-yes" onclick="deletePost()">Yes</button>
+            <button class = "btn btn-no" onclick="displayDelete('deletepost','',1)">No</button>
+        </div>
+    </div>
+
 </body>
 
 </html>

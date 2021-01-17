@@ -1,6 +1,9 @@
 html {
     background-color: #ffeedd;
 }
+.pcenter {
+  text-align: center;
+}
 .flex-parent{
     height: 100%;
     display:flex;
@@ -70,24 +73,26 @@ html {
 .full-post:focus {
   cursor: pointer;
 }
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  left: 0;
-  top: 0;
-  z-index: 1; /* Sit on top */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
 /* Modal Content/Box */
-.modal-content {
-  position: relative;
+.modal-content-confirm {
+  position: absolute;
   background-color: white;
-  margin: 10px auto; /* 15% from the top and centered */
-  width: 30%; /* Could be more or less, depending on screen size */
+  width: 30%; /* Could be more or less, depending on screen size */;
+  top:50%;
+  left:50%;
+}
+.btn {
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  font-size: 12px;
+}
+.btn-yes {
+  background-color: green;
+  float: left;
+}
+.btn-no {
+  background-color: red;
+  float: right;
 }
