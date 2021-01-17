@@ -47,7 +47,7 @@ function loadPosts(id) {
         template += "<div class = 'flex-body'>";
         template += "<p class = 'title-post'>" + posts[i].title + "</p>";
         template += "<p class = 'content-post'>" + posts[i].short + "</p>";
-        template += "<span class='fa fa-trash close-post' aria-hidden='true' title='Close' onclick=displayDelete('deletepost'," + "'" + posts[i].id + "'" + ",0)></span>";
+        template += "<span class='fa fa-trash close-post' aria-hidden='true' title='Delete' onclick=displayDelete('deletepost'," + "'" + posts[i].id + "'" + ",0)></span>";
         template += "<span class='fa fa-ellipsis-h full-post' aria-hidden='true' title='Post'></span>";
         template += "</div>";
         template += "</div>";
