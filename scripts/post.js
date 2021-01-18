@@ -8,6 +8,7 @@ function getPostIndex(id) {
     }
     return i;
 }
+
 /* Dump the details of the clicked post */
 function postDump() {
     var id = localStorage.getItem("postid");
@@ -20,6 +21,8 @@ function postDump() {
     document.getElementById("fauthor").value = posts[index].author;
     document.getElementById("fcontent").value = posts[index].content;
 }
+
+/* Toggle between Edit and Save Button */
 function toggleEditable(edit) {
     var value;
     var template;
@@ -56,6 +59,8 @@ function toggleEditable(edit) {
         posts[index].content = document.getElementById("fcontent").value;
     }
 }
+
+/* Track the number of likes and display the same */
 var postlike = 0;
 function postLiked() {
     postlike += 1;
@@ -63,6 +68,20 @@ function postLiked() {
     document.getElementById("like-button").innerHTML = "<span class='btn-like' id = 'like-button' title='like' onclick=postLiked()><i class='fa fa-thumbs-o-up' aria-hidden='true'></i> Liked</span>";
     document.getElementById("like-note").textContent = postlike + " person likes this!";
 }
+
+/* Track the number of comments and display the same */
+var post_comment = [];
+var num_comments = 0;
+
 function postComment() {
+    var template;
+
+    post_comment[num_comments] = document.getElementById("fcomment").value;
     document.getElementById("fcomment").value = "";
+    num_comments += 1;
+    document.getElementById("pcomments").innerHTML = "";
+    /* Display in the reverse order */
+    for (var i = num_comments - 1; i >= 0; i--) {
+        document.getElementById("pcomments").innerHTML += "<div class='comment-box'>" + post_comment[i] + "</div>"
+    }
 }

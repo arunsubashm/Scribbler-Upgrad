@@ -25,6 +25,7 @@
 
     <div id="postdump">
 
+        <!-- Dump the Post details -->
         <form>
             <label for="title"></label>
             <input type="text" class = "post-form post-form-title" id= "ftitle" name="title">
@@ -37,16 +38,20 @@
             <label for="content"></label>
             <textarea class = "post-form post-form-content" id= "fcontent" name="content"></textarea>
         </form>
+        <!-- Like Button -->
         <div id = "like-button">
         <span class="btn-like" title='like' onclick="postLiked()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like</span>
         </div>
         <p id = "like-note">Be the first one to like this</p>
         <div>
+        <!-- Comments -->
         <label for="comments"></label>
-        <textarea class = "post-form-comment" id= "fcomment" placeholder="Leave a comment..." name="comment"></textarea>
+        <input type="text" class = "post-form-comment" id= "fcomment" placeholder="Leave a comment..." name="comment">
         </div>
         <span class="btn-like" title='comment' onclick="postComment()">Comment</span>
+        <!-- Display of Comments -->
         <p><b>All Comments</b></p>
+        <div class="post-comments" id = "pcomments"></div>
     
     </div>
     <script type="text/javascript">
