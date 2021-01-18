@@ -38,6 +38,7 @@ html {
     border-style:groove;
     margin: 5px;
     background-color: grey;
+    display:none;
 }
 .comment-box {
     width:90%;

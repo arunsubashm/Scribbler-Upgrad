@@ -75,13 +75,19 @@ var num_comments = 0;
 
 function postComment() {
     var template;
+    var x, i;
 
     post_comment[num_comments] = document.getElementById("fcomment").value;
+    x = document.getElementsByClassName("post-comments");
+    for (i = 0; i < x.length; i++) {
+        console.log(x[i]);
+        x[i].style.display = "block";
+    }
     document.getElementById("fcomment").value = "";
     num_comments += 1;
     document.getElementById("pcomments").innerHTML = "";
     /* Display in the reverse order */
-    for (var i = num_comments - 1; i >= 0; i--) {
+    for (i = num_comments - 1; i >= 0; i--) {
         document.getElementById("pcomments").innerHTML += "<div class='comment-box'>" + post_comment[i] + "</div>"
     }
 }
