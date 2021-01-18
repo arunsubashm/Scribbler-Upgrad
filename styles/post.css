@@ -21,6 +21,18 @@ html {
     padding:unset !important;
     pointer-events: none;
 }
+
+.post-form-comment {
+    background-color: unset !important;
+    box-sizing: unset !important;
+    color: unset !important;
+    width:60%;
+    margin-bottom: 20px !important;
+    pointer-events: all;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .post-form-content {
     font-size: 12pt;
     font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +46,7 @@ html {
     padding:10px;
     margin-right: 5px;
     right:0;
-    position:absolute;
+    position: absolute;
 }
 
 .btn-like {
@@ -42,12 +54,16 @@ html {
     text-align: center;
     font-size: 12px;
     padding:10px;
-    margin-left: 5px;
     left:0;
-    position:absolute;
 }
 
+.btn-like:hover,
+.btn-like:focus,
 .btn-edit-save:hover,
 .btn-edit-save:focus {
     cursor: pointer;
+}
+#like-note {
+    font-family: sans-serif;
+    color:grey;
 }

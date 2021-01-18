@@ -16,11 +16,9 @@ function postDump() {
     if (index > 4)
         return;
 
-    console.log(posts[index].author);
     document.getElementById("ftitle").value = posts[index].title;
     document.getElementById("fauthor").value = posts[index].author;
     document.getElementById("fcontent").value = posts[index].content;
-    console.log(id);
 }
 function toggleEditable(edit) {
     var value;
@@ -63,4 +61,8 @@ function postLiked() {
     postlike += 1;
     console.log(document.getElementById("like-button"));
     document.getElementById("like-button").innerHTML = "<span class='btn-like' id = 'like-button' title='like' onclick=postLiked()><i class='fa fa-thumbs-o-up' aria-hidden='true'></i> Liked</span>";
+    document.getElementById("like-note").textContent = postlike + " person likes this!";
+}
+function postComment() {
+    document.getElementById("fcomment").value = "";
 }

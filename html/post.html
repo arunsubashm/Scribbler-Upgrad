@@ -39,7 +39,15 @@
         </form>
         <div id = "like-button">
         <span class="btn-like" title='like' onclick="postLiked()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like</span>
-        </div>div>
+        </div>
+        <p id = "like-note">Be the first one to like this</p>
+        <div>
+        <label for="comments"></label>
+        <textarea class = "post-form-comment" id= "fcomment" placeholder="Leave a comment..." name="comment"></textarea>
+        </div>
+        <span class="btn-like" title='comment' onclick="postComment()">Comment</span>
+        <p><b>All Comments</b></p>
+    
     </div>
     <script type="text/javascript">
         postDump();
