@@ -35,7 +35,7 @@ function toggleEditable(edit) {
         value = document.getElementById("fauthor").value;
         /* Change from 'Edit' to 'Save' */
         template = "<input type='text' class = 'post-form post-form-author' id= 'fauthor' name='author'>";
-        template += "<span id = 'save-id' class='btn-edit-save' aria-hidden='true' title='Save' onclick=toggleEditable(0)>Save  <i class='fa fa-floppy-o' aria-hidden='true'></i></span>";
+        template += "<span id = 'save-id' class='btn-edit-save' title='Save' onclick=toggleEditable(0)>Save  <i class='fa fa-floppy-o' aria-hidden='true'></i></span>";
         document.getElementById("save-id").innerHTML = template;
         document.getElementById("fauthor").value = value;
     } else {
@@ -45,7 +45,7 @@ function toggleEditable(edit) {
         value = document.getElementById("fauthor").value;
         /* Change from 'Edit' to 'Save' */
         template = "<input type='text' class = 'post-form post-form-author' id= 'fauthor' name='author'>";
-        template += "<span id = 'save-id' class='btn-edit-save' aria-hidden='true' title='Edit' onclick=toggleEditable(1)>Edit  <i class='fa fa-pencil-square-o' aria-hidden='true'></i></span>";
+        template += "<span id = 'save-id' class='btn-edit-save' title='Edit' onclick=toggleEditable(1)>Edit  <i class='fa fa-pencil-square-o' aria-hidden='true'></i></span>";
         document.getElementById("save-id").innerHTML = template;
         document.getElementById("fauthor").value = value;
         index = getPostIndex(id);
@@ -57,5 +57,10 @@ function toggleEditable(edit) {
         posts[index].title = document.getElementById("ftitle").value;
         posts[index].content = document.getElementById("fcontent").value;
     }
-
+}
+var postlike = 0;
+function postLiked() {
+    postlike += 1;
+    console.log(document.getElementById("like-button"));
+    document.getElementById("like-button").innerHTML = "<span class='btn-like' id = 'like-button' title='like' onclick=postLiked()><i class='fa fa-thumbs-o-up' aria-hidden='true'></i> Liked</span>";
 }

@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -29,12 +31,15 @@
             <label for="author"></label>
             <div id="save-id">
             <input type="text" class = "post-form post-form-author" id= "fauthor" name="author">
-                <span class="btn-edit-save" aria-hidden="true" title='Edit' onclick="toggleEditable(1)">Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                <span class="btn-edit-save" title='Edit' onclick="toggleEditable(1)">Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                 </span>
             </div>
             <label for="content"></label>
             <textarea class = "post-form post-form-content" id= "fcontent" name="content"></textarea>
         </form>
+        <div id = "like-button">
+        <span class="btn-like" title='like' onclick="postLiked()"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Like</span>
+        </div>div>
     </div>
     <script type="text/javascript">
         postDump();

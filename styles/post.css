@@ -35,7 +35,17 @@ html {
     margin-right: 5px;
     right:0;
     position:absolute;
-  }
+}
+
+.btn-like {
+    background-color: pink;
+    text-align: center;
+    font-size: 12px;
+    padding:10px;
+    margin-left: 5px;
+    left:0;
+    position:absolute;
+}
 
 .btn-edit-save:hover,
 .btn-edit-save:focus {
