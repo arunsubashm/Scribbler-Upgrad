@@ -48,11 +48,18 @@ function loadPosts(id) {
         template += "<p class = 'title-post'>" + posts[i].title + "</p>";
         template += "<p class = 'content-post'>" + posts[i].short + "</p>";
         template += "<span class='fa fa-trash close-post' aria-hidden='true' title='Delete' onclick=displayDelete('deletepost'," + "'" + posts[i].id + "'" + ",0)></span>";
-        template += "<span class='fa fa-ellipsis-h full-post' aria-hidden='true' title='Post'></span>";
+        template += "<span class='fa fa-ellipsis-h full-post' aria-hidden='true' title='Post' onclick=openPostPage('post.html'," + "'" + posts[i].id + "'" + ")></span>";
         template += "</div>";
         template += "</div>";
     }
     template += "</div>";
 
     document.getElementById(id).innerHTML += template;
+}
+
+/* Open a page in the same window */
+function openPostPage(page, id) {
+    localStorage.setItem("postid",id);
+    console.log(id);
+    window.open(page,'_self');
 }

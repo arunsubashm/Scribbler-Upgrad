@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/postslist.css">
+    <link rel="stylesheet" href="../styles/post.css">
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/postslist.js"></script>
+    <script src="../scripts/post.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Common header -->
+    <div id="common-header"></div>
+    <script type="text/javascript">
+        buildHeader("common-header");
+    </script>
+
+    <div id="postdump">
+
+        <form>
+            <label for="title"></label>
+            <input type="text" class = "post-form post-form-title" id= "ftitle" name="title">
+            <label for="author"></label>
+            <div id="save-id">
+            <input type="text" class = "post-form post-form-author" id= "fauthor" name="author">
+                <span class="btn-edit-save" aria-hidden="true" title='Edit' onclick="toggleEditable(1)">Edit  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </span>
+            </div>
+            <label for="content"></label>
+            <textarea class = "post-form post-form-content" id= "fcontent" name="content"></textarea>
+        </form>
+    </div>
+    <script type="text/javascript">
+        postDump();
+    </script>
+
+</body>
+
+</html>
