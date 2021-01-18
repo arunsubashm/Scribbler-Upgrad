@@ -48,6 +48,7 @@ html {
   .title-post {
     font-style: italic;
     color:grey;
+    padding: 10px;
   }
   .content-post {
     padding: 10px;
