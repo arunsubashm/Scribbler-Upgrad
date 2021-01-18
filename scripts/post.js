@@ -22,6 +22,16 @@ function postDump() {
     document.getElementById("fcontent").value = posts[index].content;
 }
 
+/* Set Border Property */
+function setBorderProperty(classname, borderp) {
+    var x, i;
+
+    x = document.getElementsByClassName(classname);
+    for (i = 0; i < x.length; i++) {
+        x[i].style.border = borderp;
+    }
+}
+
 /* Toggle between Edit and Save Button */
 function toggleEditable(edit) {
     var value;
@@ -39,6 +49,10 @@ function toggleEditable(edit) {
         template += "<span id = 'save-id' class='btn-edit-save' title='Save' onclick=toggleEditable(0)>Save  <i class='fa fa-floppy-o' aria-hidden='true'></i></span>";
         document.getElementById("save-id").innerHTML = template;
         document.getElementById("fauthor").value = value;
+
+        setBorderProperty("post-form-title", "solid green");
+        setBorderProperty("post-form-content", "solid green");
+    
     } else {
         /* Disable Edit Option */
         document.getElementById("ftitle").style.pointerEvents = "none";
@@ -57,6 +71,10 @@ function toggleEditable(edit) {
         /* Save the updated data back to posts */
         posts[index].title = document.getElementById("ftitle").value;
         posts[index].content = document.getElementById("fcontent").value;
+
+
+        setBorderProperty("post-form-title", "none");
+        setBorderProperty("post-form-content", "none");
     }
 }
 
@@ -79,6 +97,7 @@ function postComment() {
 
     post_comment[num_comments] = document.getElementById("fcomment").value;
     x = document.getElementsByClassName("post-comments");
+    console.log(x.length);
     for (i = 0; i < x.length; i++) {
         console.log(x[i]);
         x[i].style.display = "block";
